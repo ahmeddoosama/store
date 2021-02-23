@@ -1,13 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import App from './App.jsx';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter } from 'react-router-dom';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+
+//All Libraries and Packages used in the project
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import "../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
+import "../node_modules/react-toastify/dist/ReactToastify.min.css";
+
+ReactDOM.render(<App />,
   document.getElementById('root')
 );
 
