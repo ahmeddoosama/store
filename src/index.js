@@ -10,7 +10,10 @@ import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
 import "../node_modules/react-toastify/dist/ReactToastify.min.css";
 
-ReactDOM.render(<App />,
+ReactDOM.render(
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>,
   document.getElementById('root')
 );
 
